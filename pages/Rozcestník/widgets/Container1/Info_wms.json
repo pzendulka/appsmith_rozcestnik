@@ -1,0 +1,70 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 8,
+  "boxShadow": "none",
+  "dynamicBindingPathList": [
+    {
+      "key": "menuColor"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "menuItems.menuItem1.onClick"
+    },
+    {
+      "key": "menuItems.menuItem2gfqemy4g5.onClick"
+    }
+  ],
+  "isCompact": false,
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "xzzi2b1ujr",
+  "label": "Info WMS",
+  "leftColumn": 9,
+  "menuColor": "{{appsmith.theme.colors.primaryColor}}",
+  "menuItems": {
+    "menuItem1": {
+      "id": "menuItem1",
+      "index": 0,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Dashboard PZZ - Výdej",
+      "onClick": "{{navigateTo('Dashboard PZZ - Výdej', {}, 'NEW_WINDOW');}}",
+      "widgetId": ""
+    },
+    "menuItem2gfqemy4g5": {
+      "id": "menuItem2gfqemy4g5",
+      "index": 1,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Dashboard PZZ - Příjem",
+      "onClick": "{{navigateTo('Dashboard PZZ - Příjem', {}, 'NEW_WINDOW');}}",
+      "widgetId": "gdnflh5bzl"
+    }
+  },
+  "menuItemsSource": "STATIC",
+  "menuVariant": "PRIMARY",
+  "mobileBottomRow": 7,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 16,
+  "mobileTopRow": 3,
+  "needsErrorInfo": false,
+  "originalBottomRow": 8,
+  "originalTopRow": 4,
+  "parentColumnSpace": 16.5,
+  "parentId": "d2pg58va23",
+  "parentRowSpace": 10,
+  "placement": "CENTER",
+  "renderMode": "CANVAS",
+  "rightColumn": 18,
+  "topRow": 4,
+  "type": "MENU_BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "wup9hopo0k",
+  "widgetName": "Info_wms"
+}

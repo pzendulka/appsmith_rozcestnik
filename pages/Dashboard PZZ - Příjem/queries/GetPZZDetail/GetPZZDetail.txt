@@ -1,0 +1,42 @@
+SELECT
+wp.PrevodkaID,
+wp.Predmet,
+wp.Datum,
+wp.Chyba_IS,
+k2.Name,
+wp.Stav_kontrola_vydej,
+wp.Stav_kontrola_prijem,
+wp.IS_Vydejka_cislo_dokladu,
+wp.IS_Vratka_cislo_dokladu,
+wp.IS_Rezervace,
+k.Produkt,
+k.Popis,
+k.Katalogove_cislo,
+wpp.Stav_kontrola_vydej AS Stav_kontrola_vydej_polozky,
+wpp.Stav_kontrola_prijem AS Stav_kontrola_prijem_polozky,
+d_int.Cislo_dokladu AS IZ,
+d_obch.Variabilni_symbol  AS ZZ
+FROM WM_Prevodka wp
+	LEFT JOIN WM_Prevodka_polozky wpp 
+	ON wp.Oid = wpp.WM_Prevodka
+LEFT JOIN Katalog k 
+ON wpp.Katalog = k.Oid
+LEFT JOIN Knihy k2 
+ON k2.Oid = wp.Knihy_prijem 
+LEFT JOIN Polozky_dokladu pd_int
+    ON pd_int.Oid = wpp.InterniPolozka
+LEFT JOIN Doklad d_int
+    ON d_int.Oid = pd_int.Doklad
+LEFT JOIN Polozky_dokladu pd_obch
+    ON pd_obch.Oid = wpp.ObchodniPolozka
+LEFT JOIN Doklad d_obch
+    ON d_obch.Oid = pd_obch.Doklad
+WHERE wp.PrevodkaID = {{ appsmith.store.selectedPrevodkaID }}
+AND wp.Zobrazit_na_terminalu ='1'
+AND wpp.Katalog IS NOT NULL
+AND wp.Datum > '2025-01-01 00:00:00.000'
+AND NOT (
+    COALESCE(wp.Stav_kontrola_vydej, '') = 'OK'
+    AND COALESCE(wp.Stav_kontrola_prijem, '') = 'OK'
+)
+AND wp.Knihy_prijem IS NOT NULL

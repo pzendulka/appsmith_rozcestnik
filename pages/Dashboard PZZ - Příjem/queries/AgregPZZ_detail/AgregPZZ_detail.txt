@@ -1,0 +1,42 @@
+SELECT
+    sklad,
+    COUNT(DISTINCT PrevodkaID)     AS pocet_prevodek_open,
+    MIN(Datum)                     AS nejstarsi_datum,
+    COUNT(DISTINCT Produkt)        AS pocet_unikatnich_produktu,
+    DATEADD(SECOND, MIN(median_seconds), '1970-01-01') AS median_datum,
+    DATEDIFF(
+        HOUR,
+        DATEADD(SECOND, MIN(median_seconds), '1970-01-01'),
+        GETDATE()
+    ) AS median_hours
+FROM (
+    SELECT
+        k2.Name AS sklad,
+        wp.PrevodkaID,
+        wp.Datum,
+        k.Produkt,
+        PERCENTILE_CONT(0.5)
+            WITHIN GROUP (ORDER BY DATEDIFF(SECOND, '1970-01-01', wp.Datum))
+            OVER (PARTITION BY k2.Name) AS median_seconds
+    FROM WM_Prevodka wp
+    JOIN WM_Prevodka_polozky wpp
+        ON wp.Oid = wpp.WM_Prevodka
+    JOIN Katalog k
+        ON wpp.Katalog = k.Oid
+    JOIN Knihy k2
+        ON k2.Oid = wp.Knihy_prijem
+    JOIN (
+      {{ 
+        AgregacePobockyJS.getSkladyForPobocka(appsmith.store.SelectedPobocka)
+          .map(name => `SELECT '${name}' AS sklad`)
+          .join(" UNION ALL ")
+      }}
+    ) sklady ON sklady.sklad = k2.Name
+    WHERE
+        wp.Zobrazit_na_terminalu = '1'
+        AND wpp.Katalog IS NOT NULL
+        AND wp.Datum > '2025-01-01 00:00:00.000'
+        AND wp.Stav_kontrola_prijem IS NULL
+) x
+GROUP BY sklad
+ORDER BY sklad;

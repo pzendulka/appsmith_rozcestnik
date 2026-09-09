@@ -1,0 +1,68 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 8,
+  "boxShadow": "none",
+  "dynamicBindingPathList": [
+    {
+      "key": "menuColor"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "menuItems.menuItem1.onClick"
+    },
+    {
+      "key": "menuItems.menuItemf9a6tvjcm2.onClick"
+    }
+  ],
+  "isCompact": false,
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "9g8yhxteqk",
+  "label": "Užitečné odkazy",
+  "leftColumn": 47,
+  "menuColor": "{{appsmith.theme.colors.primaryColor}}",
+  "menuItems": {
+    "menuItem1": {
+      "id": "menuItem1",
+      "index": 0,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "RMA portál",
+      "onClick": "{{navigateTo('https://rma.armedstore.cz', {}, 'NEW_WINDOW');}}",
+      "widgetId": ""
+    },
+    "menuItemf9a6tvjcm2": {
+      "id": "menuItemf9a6tvjcm2",
+      "index": 1,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Zaměstnanecké slevy",
+      "onClick": "{{navigateTo('Zaměstnanecké slevy', {}, 'NEW_WINDOW');}}",
+      "widgetId": "ofr51hqs4h"
+    }
+  },
+  "menuItemsSource": "STATIC",
+  "menuVariant": "PRIMARY",
+  "mobileBottomRow": 7,
+  "mobileLeftColumn": 47,
+  "mobileRightColumn": 63,
+  "mobileTopRow": 3,
+  "needsErrorInfo": false,
+  "parentColumnSpace": 16.5,
+  "parentId": "d2pg58va23",
+  "parentRowSpace": 10,
+  "placement": "CENTER",
+  "renderMode": "CANVAS",
+  "rightColumn": 60,
+  "topRow": 4,
+  "type": "MENU_BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "t408v9cuuw",
+  "widgetName": "MenuButton5"
+}

@@ -1,0 +1,6 @@
+SELECT
+  name,
+  discount_percent
+FROM public.discount_manufacturers
+WHERE discount_percent IS NOT NULL
+ORDER BY name;

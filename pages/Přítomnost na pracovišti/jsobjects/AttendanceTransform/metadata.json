@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "693c449151e9b725a30878f5_8d5c4721-0a3d-4a2c-94a2-38b354047330",
+  "id": "Přítomnost na pracovišti_AttendanceTransform",
+  "unpublishedCollection": {
+    "name": "AttendanceTransform",
+    "pageId": "Přítomnost na pracovišti",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}

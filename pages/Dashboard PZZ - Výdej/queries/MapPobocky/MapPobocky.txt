@@ -1,0 +1,1 @@
+SELECT sklad, pobocka FROM appsmith.mapa_pobocky_sklady;

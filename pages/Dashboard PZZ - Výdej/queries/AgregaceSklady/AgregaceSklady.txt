@@ -1,0 +1,40 @@
+WITH raw AS (
+    SELECT
+        k2.Name AS sklad,
+        wp.PrevodkaID,
+        wp.Datum,
+        k.Produkt,
+        DATEDIFF(SECOND, '1970-01-01', wp.Datum) AS datum_sec,
+        PERCENTILE_CONT(0.5) 
+            WITHIN GROUP (ORDER BY DATEDIFF(SECOND, '1970-01-01', wp.Datum))
+            OVER (PARTITION BY k2.Name) AS median_sec
+    FROM WM_Prevodka wp
+    JOIN WM_Prevodka_polozky wpp ON wp.Oid = wpp.WM_Prevodka
+    JOIN Katalog k ON wpp.Katalog = k.Oid
+    JOIN Knihy k2 ON k2.Oid = wp.Knihy_vydej
+    WHERE
+        wp.Zobrazit_na_terminalu = '1'
+        AND wpp.Katalog IS NOT NULL
+        AND wp.Datum > '2025-01-01'
+        AND wp.Stav_kontrola_vydej IS NULL
+),
+s_per_sklad AS (
+    SELECT
+        sklad,
+        COUNT(DISTINCT PrevodkaID) AS pocet_prevodek_open,
+        MIN(Datum) AS nejstarsi_datum,
+        COUNT(DISTINCT Produkt) AS pocet_unikatnich_produktu,
+        MIN(median_sec) AS median_sec
+    FROM raw
+    GROUP BY sklad
+)
+
+SELECT 
+    sklad,
+    pocet_prevodek_open,
+    nejstarsi_datum,
+    pocet_unikatnich_produktu,
+    DATEADD(SECOND, median_sec, '1970-01-01') AS median_datum,
+    DATEDIFF(HOUR, DATEADD(SECOND, median_sec, '1970-01-01'), GETDATE()) AS median_hours
+FROM s_per_sklad
+ORDER BY sklad;

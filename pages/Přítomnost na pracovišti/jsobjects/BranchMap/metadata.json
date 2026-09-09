@@ -1,0 +1,16 @@
+{
+  "gitSyncId": "693c449151e9b725a30878f5_e52a7f8d-0672-4aa8-9df2-fc73eee9f005",
+  "id": "Přítomnost na pracovišti_BranchMap",
+  "unpublishedCollection": {
+    "name": "BranchMap",
+    "pageId": "Přítomnost na pracovišti",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "branches",
+        "value": "{\n  \"Prodejna Praha\": [\"Vysočany/Prodejna P9/P9 prodavač HPP\", \"Vysočany/Prodejna P9/P9 prodavač DPP\"],\n  \"Sklad Praha\": [\"Vysočany/P9 sklad HPP\", \"Vysočany/P9 sklad DPP\"],\n  \"Plzeň\": [\"Plzeň HPP\", \"Plzeň DPP\"],\n  \"Brno\": [\"Brno HPP\", \"Brno DPP\"],\n  \"Pardubice\": [\"Pardubice HPP\", \"Pardubice DPP\"],\n  \"Tábor\": [\"Tábor\"],\n  \"Vyškov\": [\"Vyškov\"],\n  \"Obchodní oddělení\": [\"Vysočany/Kancelář\", \"Helpdesk\"]\n}"
+      }
+    ]
+  }
+}

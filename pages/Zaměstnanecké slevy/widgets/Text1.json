@@ -1,0 +1,52 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 20,
+  "dynamicBindingPathList": [
+    {
+      "key": "truncateButtonColor"
+    },
+    {
+      "key": "fontFamily"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicTriggerPathList": [],
+  "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+  "fontSize": "1rem",
+  "fontStyle": "",
+  "isLoading": false,
+  "isVisible": true,
+  "key": "iifjkdzfca",
+  "leftColumn": 1,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 5,
+  "mobileLeftColumn": 1,
+  "mobileRightColumn": 17,
+  "mobileTopRow": 1,
+  "needsErrorInfo": false,
+  "originalBottomRow": 110,
+  "originalTopRow": 1,
+  "overflow": "NONE",
+  "parentColumnSpace": 16.8125,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 63,
+  "shouldTruncate": false,
+  "text": "Nově má každý zaměstnanec přiřazeny vlastní slevové kupóny na daný rok.\nCelý systém je do značné míry automatický.Slevový kupón je přiřazen k emailové adrese, kterou máze zavedenou v personální agendě. Tedy zpravidla je to ta, kterou jsem uvedli v personálním dotazníku. \npokud chcete kupón použít a nemáte registraci na tento email v e-shopu, musíte si registraci vytvořit.\nPokud nemáte přiřazený ke svému účtu profesní ceník, tak si o něj zažádejte. Systém počítá s tím, že máte přiřazený profesní ceník. Proto jsou výchozí hodnoty o něco nižší. ale s profesním ceníkem se sleva zvýší o 5%.\nPokud Vám bude přidělen nový slevový kupón, nebo ke slevovému kupónu, který už budete mít přidělen, bude přiřazena další značka, dostanete automaticky email. V emailu bude zároveň seznam vašich slevových kupónů. Vždy začínají na vaše iniciály, pak je rok yy, pak je hodnota slevy a pak nějaký kód. Takže třeba PZ2620 znamená, že jde o kód na 20% slevu.",
+  "textAlign": "LEFT",
+  "textColor": "#231F20",
+  "topRow": 1,
+  "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "type": "TEXT_WIDGET",
+  "version": 1,
+  "widgetId": "7rwghmzaki",
+  "widgetName": "Text1"
+}

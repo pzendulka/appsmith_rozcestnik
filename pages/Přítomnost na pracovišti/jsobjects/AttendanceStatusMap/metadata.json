@@ -1,0 +1,16 @@
+{
+  "gitSyncId": "693c449151e9b725a30878f5_602062ac-0ce7-485e-9883-9be418a31f44",
+  "id": "Přítomnost na pracovišti_AttendanceStatusMap",
+  "unpublishedCollection": {
+    "name": "AttendanceStatusMap",
+    "pageId": "Přítomnost na pracovišti",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "map",
+        "value": "{\n  came: \"V práci\",\n  isAbsent: \"Nepřítomen\",\n  didNotCome: \"Nedorazil\",\n  left: \"Odešel\"\n}"
+      }
+    ]
+  }
+}

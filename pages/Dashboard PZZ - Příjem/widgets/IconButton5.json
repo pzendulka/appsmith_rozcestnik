@@ -1,0 +1,41 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 8,
+  "boxShadow": "none",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonVariant": "PRIMARY",
+  "dynamicBindingPathList": [
+    {
+      "key": "buttonColor"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "iconName": "help",
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "mc8d1l9z24",
+  "leftColumn": 57,
+  "minWidth": 50,
+  "mobileBottomRow": 6,
+  "mobileLeftColumn": 57,
+  "mobileRightColumn": 61,
+  "mobileTopRow": 2,
+  "needsErrorInfo": false,
+  "parentColumnSpace": 10.5625,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "hug",
+  "rightColumn": 61,
+  "tooltip": "Postupně se lze proklikat až na položky PZZ. Jsou zobrazeny všechny nezpracované PZZ, tedy i ty, které jsou načtené čtečkou a nedokončené.",
+  "topRow": 4,
+  "type": "ICON_BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "lscw7zye6l",
+  "widgetName": "IconButton5"
+}

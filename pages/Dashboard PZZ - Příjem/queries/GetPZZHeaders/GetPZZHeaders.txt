@@ -1,0 +1,13 @@
+SELECT DISTINCT
+  wp.PrevodkaID,
+	wp.Predmet,	
+  wp.Datum
+FROM WM_Prevodka wp
+JOIN Knihy k2 ON k2.Oid = wp.Knihy_prijem
+JOIN WM_Prevodka_polozky wpp
+        ON wp.Oid = wpp.WM_Prevodka
+WHERE k2.Name = {{ appsmith.store.selectedName }}
+        AND wp.Zobrazit_na_terminalu = '1'
+        AND wp.Datum > '2025-01-01 00:00:00.000'
+        AND wp.Stav_kontrola_prijem IS NULL
+ORDER BY wp.Datum ASC;

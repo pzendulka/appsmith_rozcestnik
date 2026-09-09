@@ -1,0 +1,94 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 8,
+  "boxShadow": "none",
+  "dynamicBindingPathList": [
+    {
+      "key": "menuColor"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "menuItems.menuItem1.onClick"
+    },
+    {
+      "key": "menuItems.menuItem2.onClick"
+    },
+    {
+      "key": "menuItems.menuItem3.onClick"
+    },
+    {
+      "key": "menuItems.menuItemamzt7lcq7s.onClick"
+    }
+  ],
+  "isCompact": false,
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "9m5g1ui9u1",
+  "label": "Menu Sales",
+  "leftColumn": 0,
+  "menuColor": "{{appsmith.theme.colors.primaryColor}}",
+  "menuItems": {
+    "menuItem1": {
+      "id": "menuItem1",
+      "index": 0,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "PDP",
+      "onClick": "{{navigateTo('https://aplikace.armedstore.cz/app/pdp/page1-68e6c41eba60ea37630c42d1?branch=main', {}, 'NEW_WINDOW');}}",
+      "widgetId": ""
+    },
+    "menuItem2": {
+      "id": "menuItem2",
+      "index": 1,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Promoakce",
+      "onClick": "{{navigateTo('https://aplikace.armedstore.cz/app/promo/promo-state-68b5871e4ba0526144aef09d', {}, 'NEW_WINDOW');}}",
+      "widgetId": ""
+    },
+    "menuItem3": {
+      "id": "menuItem3",
+      "index": 2,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Přehled komise",
+      "onClick": "{{navigateTo('https://aplikace.armedstore.cz/app/prehled-komise-bez-sn/prehled-komise-bez-sn-6854740a17c94c47bc4baa5e', {}, 'NEW_WINDOW');}}",
+      "widgetId": ""
+    },
+    "menuItemamzt7lcq7s": {
+      "id": "menuItemamzt7lcq7s",
+      "index": 3,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Disivo masters",
+      "onClick": "{{navigateTo('https://aplikace.armedstore.cz/app/disivo-masters/page1-68a833144ba0526144aeefce', {}, 'NEW_WINDOW');}}",
+      "widgetId": "5nf3d0gcx0"
+    }
+  },
+  "menuItemsSource": "STATIC",
+  "menuVariant": "PRIMARY",
+  "mobileBottomRow": 9,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 16,
+  "mobileTopRow": 5,
+  "needsErrorInfo": false,
+  "originalBottomRow": 8,
+  "originalTopRow": 4,
+  "parentColumnSpace": 10.25,
+  "parentId": "dp42jo5pyx",
+  "parentRowSpace": 10,
+  "placement": "CENTER",
+  "renderMode": "CANVAS",
+  "rightColumn": 16,
+  "topRow": 4,
+  "type": "MENU_BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "7wscg02bfv",
+  "widgetName": "MenuButton2"
+}

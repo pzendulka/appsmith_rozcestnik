@@ -1,0 +1,52 @@
+{
+  "appIsExample": false,
+  "applicationDetail": {
+    "appPositioning": {
+      "type": "FIXED"
+    },
+    "navigationSetting": {},
+    "themeSetting": {
+      "appMaxWidth": "LARGE",
+      "density": 1.0,
+      "sizing": 1.0
+    }
+  },
+  "applicationVersion": 2,
+  "collapseInvisibleWidgets": true,
+  "color": "#C2DAF0",
+  "evaluationVersion": 2,
+  "icon": "shake-hands",
+  "pages": [
+    {
+      "id": "Rozcestník",
+      "isDefault": true
+    },
+    {
+      "id": "Dashboard PZZ - Výdej",
+      "isDefault": false
+    },
+    {
+      "id": "Přítomnost na pracovišti",
+      "isDefault": false
+    },
+    {
+      "id": "Zaměstnanecké slevy",
+      "isDefault": false
+    },
+    {
+      "id": "Dashboard PZZ - Příjem",
+      "isDefault": false
+    }
+  ],
+  "unpublishedApplicationDetail": {
+    "appPositioning": {
+      "type": "FIXED"
+    },
+    "navigationSetting": {},
+    "themeSetting": {
+      "appMaxWidth": "LARGE",
+      "density": 1.0,
+      "sizing": 1.0
+    }
+  }
+}
