@@ -14,6 +14,9 @@
   "dynamicTriggerPathList": [
     {
       "key": "menuItems.menuItem1.onClick"
+    },
+    {
+      "key": "menuItems.menuItem2.onClick"
     }
   ],
   "isCompact": false,
@@ -21,7 +24,7 @@
   "isLoading": false,
   "isVisible": true,
   "key": "9m5g1ui9u1",
-  "label": "Plánování",
+  "label": "Plánování a kontroly",
   "leftColumn": 29,
   "menuColor": "{{appsmith.theme.colors.primaryColor}}",
   "menuItems": {
@@ -39,7 +42,8 @@
       "index": 1,
       "isDisabled": false,
       "isVisible": true,
-      "label": "Second Menu Item",
+      "label": "Přehled schv. prof. ceníků",
+      "onClick": "{{navigateTo('https://aplikace.armedstore.cz/app/vedeni-prodejen/schvaleni-profesnich-ceniku-6aa2bad6cf1da3727f0e20a1', {}, 'NEW_WINDOW');}}",
       "widgetId": ""
     },
     "menuItem3": {
