@@ -17,6 +17,9 @@
     },
     {
       "key": "menuItems.menuItem2gfqemy4g5.onClick"
+    },
+    {
+      "key": "menuItems.menuItemnp6zgmrko8.onClick"
     }
   ],
   "isCompact": false,
@@ -45,6 +48,15 @@
       "label": "Dashboard PZZ - Příjem",
       "onClick": "{{navigateTo('Dashboard PZZ - Příjem', {}, 'NEW_WINDOW');}}",
       "widgetId": "gdnflh5bzl"
+    },
+    "menuItemnp6zgmrko8": {
+      "id": "menuItemnp6zgmrko8",
+      "index": 2,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Statistiky převodů",
+      "onClick": "{{navigateTo('https://odoo.armed.cz/wms/report/1/6I7mpbsp7sKtAivRg1RuKPZUn9thQ1qI', {}, 'NEW_WINDOW');}}",
+      "widgetId": "wjs7p60guq"
     }
   },
   "menuItemsSource": "STATIC",
