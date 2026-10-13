@@ -21,6 +21,9 @@
     },
     {
       "key": "menuItems.menuItemcmg951phgv.onClick"
+    },
+    {
+      "key": "menuItems.menuItem9vn9psd62y.onClick"
     }
   ],
   "isCompact": false,
@@ -49,6 +52,15 @@
       "label": "Provize",
       "onClick": "{{navigateTo('https://aplikace.armedstore.cz/app/personalistika/provize-ze-zisku-69d6af6485b3ac15b034cebf?branch=main', {}, 'SAME_WINDOW');}}",
       "widgetId": ""
+    },
+    "menuItem9vn9psd62y": {
+      "id": "menuItem9vn9psd62y",
+      "index": 3,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Správa PINů",
+      "onClick": "{{navigateTo('https://aplikace.armedstore.cz/app/appsmith-sprava-pinu/sprava-pinu-6acdfeab4c5f81aaf0358bd3?branch=main', {}, 'NEW_WINDOW');}}",
+      "widgetId": "aou6o8bi0y"
     },
     "menuItemcmg951phgv": {
       "id": "menuItemcmg951phgv",
