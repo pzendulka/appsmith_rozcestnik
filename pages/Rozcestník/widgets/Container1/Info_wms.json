@@ -20,6 +20,9 @@
     },
     {
       "key": "menuItems.menuItemnp6zgmrko8.onClick"
+    },
+    {
+      "key": "menuItems.menuItem9qpjpjr9z0.onClick"
     }
   ],
   "isCompact": false,
@@ -48,6 +51,15 @@
       "label": "Dashboard PZZ - Příjem",
       "onClick": "{{navigateTo('Dashboard PZZ - Příjem', {}, 'NEW_WINDOW');}}",
       "widgetId": "gdnflh5bzl"
+    },
+    "menuItem9qpjpjr9z0": {
+      "id": "menuItem9qpjpjr9z0",
+      "index": 3,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Zpožděné zakázky",
+      "onClick": "{{navigateTo('https://odoo.armed.cz/wms/report/2/nGTM4qjqhD0MvKFIXT0eYmoa9eiwWCqG', {}, 'NEW_WINDOW');}}",
+      "widgetId": "wogdqeionk"
     },
     "menuItemnp6zgmrko8": {
       "id": "menuItemnp6zgmrko8",
