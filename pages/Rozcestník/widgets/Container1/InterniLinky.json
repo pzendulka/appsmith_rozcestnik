@@ -1,0 +1,51 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 8,
+  "boxShadow": "none",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonVariant": "PRIMARY",
+  "disabledWhenInvalid": false,
+  "dynamicBindingPathList": [
+    {
+      "key": "buttonColor"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicPropertyPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "isDefaultClickDisabled": true,
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "qgw04w47hc",
+  "leftColumn": 19,
+  "minWidth": 120,
+  "mobileBottomRow": 8,
+  "mobileLeftColumn": 34,
+  "mobileRightColumn": 50,
+  "mobileTopRow": 4,
+  "needsErrorInfo": false,
+  "onClick": "{{navigateTo('https://odoo.armed.cz/armed_telnyx/interni-linky/cfY138U2BF4PKTQHYWwEemgPZHrcT_xR', {}, 'NEW_WINDOW');}}",
+  "parentColumnSpace": 16.5,
+  "parentId": "d2pg58va23",
+  "parentRowSpace": 10,
+  "placement": "CENTER",
+  "recaptchaType": "V3",
+  "renderMode": "CANVAS",
+  "resetFormOnClick": false,
+  "responsiveBehavior": "hug",
+  "rightColumn": 29,
+  "text": "Interní linky",
+  "topRow": 4,
+  "type": "BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "tu57armnh3",
+  "widgetName": "InterniLinky"
+}
