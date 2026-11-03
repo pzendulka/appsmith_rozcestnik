@@ -17,6 +17,9 @@
     },
     {
       "key": "menuItems.menuItem2.onClick"
+    },
+    {
+      "key": "menuItems.menuItem3.onClick"
     }
   ],
   "isCompact": false,
@@ -51,7 +54,8 @@
       "index": 2,
       "isDisabled": false,
       "isVisible": true,
-      "label": "Third Menu Item",
+      "label": "Statistika prodejen",
+      "onClick": "{{navigateTo('https://aplikace.armedstore.cz/app/statistiky-prodeju/statistiky-prodejcu-6ae8571c4c5f81aaf0359364?branch=main', {}, 'NEW_WINDOW');}}",
       "widgetId": ""
     }
   },
